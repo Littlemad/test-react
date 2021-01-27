@@ -6,6 +6,7 @@ function main() {
       <p>Testing content</p>
       <svg className="svg close">
         <use xlinkHref="./svg/sprite.svg#atls-close" />
+        test
       </svg>
     </div>
   );
