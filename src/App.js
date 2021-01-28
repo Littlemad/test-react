@@ -6,10 +6,10 @@ import "./style/basic.scss";
 
 export default function App() {
   return (
-    <div>
+    <>
       <Header />
       <Main />
       <Footer />
-    </div>
+    </>
   );
 }
