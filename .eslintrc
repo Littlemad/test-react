@@ -25,7 +25,7 @@
 		"no-else-return": "off",
 		"no-unused-expressions": ["error", { "allowTernary": true }],
 		"one-var": ["error", { "initialized": "never", "uninitialized": "always" }],
-		"no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
 	},
 	"settings": {
 		"react": {

@@ -1,15 +1,18 @@
 import React from "react";
-import Header from "./component/ui/header/header";
-import Main from "./component/ui/main/main";
-import Footer from "./component/ui/footer/footer";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Main from "./common/component/Main";
+import Header from "./common/component/Header";
 import "./style/basic.scss";
 
 export default function App() {
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/head" component={Header} />
+        </Switch>
+      </Router>
     </>
   );
 }
