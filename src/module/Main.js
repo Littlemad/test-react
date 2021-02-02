@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import { spriteUrl } from "../common/helper/url";
 
 const main = () => {
   const history = useHistory();
@@ -8,11 +9,8 @@ const main = () => {
   );
 
   useEffect(() => {
-    console.log("main effect");
     localStorage.setItem("localStorageInput", storage);
   }, [storage]);
-
-  console.log("main");
 
   const handleOnChange = (e) => {
     setStorage(e.target.value);
@@ -22,6 +20,10 @@ const main = () => {
     <>
       <h1>Main</h1>
       <button onClick={() => history.push("/head")}>Head</button>
+      <br />
+      <svg role="img" className="svg atls-add2" aria-label="some text for aria">
+        <use className="xlink" href={`${spriteUrl}#atls-add2`} />
+      </svg>
       <br />
       <br />
       <form>

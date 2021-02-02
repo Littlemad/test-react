@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Main from "./common/component/Main";
+import Main from "./module/Main";
 import Header from "./common/component/Header";
 import "./style/basic.scss";
 
